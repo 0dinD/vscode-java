@@ -44,6 +44,35 @@
         "id": "annotationMember",
         "superType": "function",
         "description": "Style for annotation members."
+      },
+      {
+        "id": "character",
+        "superType": "string",
+        "description": "Style for character literals."
+      },
+      {
+        "id": "primitiveType",
+        "superType": "keyword",
+        "description": "Style for primitive types."
+      },
+      {
+        "id": "modifier",
+        "superType": "keyword",
+        "description": "Style for modifiers."
+      }
+    ],
+    "semanticTokenScopes": [
+      {
+        "language": "java",
+        "scopes": {
+          "primitiveType": ["storage.type.primitive.java"]
+        }
+      },
+      {
+        "language": "java",
+        "scopes": {
+          "modifier": ["storage.modifier.java"]
+        }
       }
     ],
     "languages": [
