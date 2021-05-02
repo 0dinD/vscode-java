@@ -425,6 +425,22 @@
           "description": "When set to true, method arguments are guessed when a method is selected from as list of code assist proposals.",
           "scope": "window"
         },
+        "java.completion.showDeprecated": {
+          "type": "string",
+          "enum": [
+            "always",
+            "never",
+            "belowOthers"
+          ],
+          "enumDescriptions": [
+            "Always show deprecated completion proposals.",
+            "Never show deprecated completion proposals.",
+            "Show deprecated completion proposals below others."
+          ],
+          "description": "Controls the visibility of deprecated completion proposals.",
+          "default": "belowOthers",
+          "scope": "window"
+        },
         "java.completion.favoriteStaticMembers": {
           "type": "array",
           "description": "Defines a list of static members or types with static members. Content assist will propose those static members even if the import is missing.",
